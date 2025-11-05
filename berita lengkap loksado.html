@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Berita Lengkap - Kegiatan Healing di Loksado | PT. Maju Seraya Sukses</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Favicon -->
+    <link href="img/logo rb.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Rubik:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* Navbar */
+        .navbar,
+        .navbar .container-fluid,
+        .navbar-brand {
+            padding-left: 0 !important;
+            margin-left: 0 !important;
+        }
+
+        /* Konten berita */
+        .news-detail {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #111827;
+            color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .news-detail:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .news-detail img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border: 2px solid white;
+            border-radius: 6px;
+            transition: transform 0.3s ease;
+        }
+
+        .news-detail img:hover {
+            transform: scale(1.05);
+        }
+
+        .news-detail .content {
+            padding: 20px;
+        }
+
+        .news-detail .content h1 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .news-detail .content p {
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .news-detail .content h1 {
+                font-size: 24px;
+            }
+
+            .news-detail .content p {
+                font-size: 14px;
+            }
+        }
+        .news-image {
+    max-height: 400px;
+    overflow: hidden;
+    border-bottom: 2px solid #fff;
+    border-radius: 6px 6px 0 0;
+}
+
+.news-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+    border-radius: 6px 6px 0 0;
+}
+
+.news-image img:hover {
+    transform: scale(1.05);
+}
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-0 pe-3">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand d-flex align-items-center ps-3 me-0">
+                <img src="img/logo bg remove hitam.png" class="img-fluid" style="max-height:50px;" alt="Logo">
+                <h1 class="text-dark m-0 fs-5 ms-2">PT. Maju Seraya Sukses</h1>
+            </a>
+            <button type="button" class="navbar-toggler me-3" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-3 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Tentang Kami</a>
+                        <div class="dropdown-menu bg-light m-0" style="font-size: 15px;">
+                            <a href="Sejarah Perusahaan.html" class="dropdown-item">Sejarah Perusahaan</a>
+                            <a href="Struktur Organisasi.html" class="dropdown-item">Struktur Organisasi</a>
+                            <a href="Legalitas.html" class="dropdown-item">Legalitas</a>
+                            <a href="Penghargaan.html" class="dropdown-item">Penghargaan</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Layanan</a>
+                        <div class="dropdown-menu bg-light m-0" style="font-size: 15px;">
+                            <a href="Layanan.html" class="dropdown-item">Layanan Kami</a>
+                            <a href="Values.html" class="dropdown-item">Values & Kekuatan</a>
+                            <a href="Scope.html" class="dropdown-item">Scope Of Business</a>
+                            <a href="Distribusi.html" class="dropdown-item">Proses Distribusi</a>
+                        </div>
+                    </div>
+                    <a href="Galeri.html" class="nav-item nav-link">Galeri</a>
+                    <a href="Berita.html" class="nav-item nav-link">Berita</a>
+                    <a href="Klien.html" class="nav-item nav-link">Klien</a>
+                    <a href="Kontak.html" class="nav-item nav-link">Kontak</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Berita Detail Start -->
+    <div class="container-xxl py-5">
+        <div class="news-detail wow fadeInUp" data-wow-delay="0.1s">
+            <div class="news-image">
+    <img src="img/berita-loksado.JPG" alt="Kegiatan Healing Loksado">
+</div>
+            <div class="content">
+                <h1>Kegiatan Healing Karyawan di Loksado</h1>
+                <p>PT. Maju Seraya Sukses mengadakan kegiatan healing di Loksado sebagai bentuk apresiasi kepada karyawan dan untuk mempererat kekompakan tim. Kegiatan ini meliputi outbound, team building, dan sesi refleksi bersama untuk meningkatkan semangat kerja serta kolaborasi antar karyawan.</p>
+                <p>Selain kegiatan fisik, peserta juga menikmati suasana alam Loksado yang asri, dengan hutan hijau dan sungai yang jernih, sebagai cara refreshing dari rutinitas kantor. Kegiatan ini diharapkan dapat meningkatkan motivasi kerja serta memperkuat hubungan antar karyawan dalam tim.</p>
+                <p>Kegiatan ini menjadi salah satu agenda rutin perusahaan untuk menjaga kesejahteraan karyawan dan menumbuhkan budaya kerja yang positif. PT. Maju Seraya Sukses percaya bahwa karyawan yang bahagia akan memberikan kinerja terbaik untuk perusahaan dan klien.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Berita Detail End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer mt-5 py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-4">Our Office</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Jl. Pangeran Kacil RT. 007 RW. 000, Kotabaru Hilir, Pulau Laut Sigam, Kab. Kotabaru, Kalimantan Selatan</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(+62518)25231</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>majuserayasukses_ktb@ymail.com</p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-4">Business Hours</h5>
+                    <p class="mb-1">Senin - Jum'at</p>
+                    <h6 class="text-light">08:00 - 17:00</h6>
+                    <p class="mb-1">Sabtu</p>
+                    <h6 class="text-light">08:00 - 12:00</h6>
+                    <p class="mb-1">Minggu</p>
+                    <h6 class="text-light">Libur</h6>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.4603139972282!2d116.2296961740561!3d-3.235036896740031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2def3159210bac73%3A0xfb0d2d12e338ca5!2sMaju%20Seraya%20Sukses%2C%20PT!5e0!3m2!1sid!2sid!4v1757333617863!5m2!1sid!2sid" style="width:100%; height:250px; border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright bg-dark py-4">
+        <div class="container text-center">
+            <p class="mb-2">Copyright &copy; <a class="fw-semi-bold" href="#">PT. Maju Seraya Sukses</a>, All Right Reserved.</p>
+            <p class="mb-0">Designed By <a class="fw-semi-bold" href="https://htmlcodex.com">HTML Codex</a></p>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
