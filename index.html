@@ -49,6 +49,26 @@
   padding-left: 0 !important;
   margin-left: 0 !important;
 }
+/* Navbar Responsive */
+.navbar-brand h1 {
+  font-size: 16px; /* Nama perusahaan mengecil di HP */
+  white-space: nowrap; /* Biar teks tidak pecah */
+}
+
+@media (max-width: 576px) {
+  .navbar-brand h1 {
+    font-size: 14px;
+  }
+  .navbar-brand img {
+    max-height: 35px; /* Logo lebih kecil */
+  }
+}
+
+/* Dropdown di HP lebih lebar */
+.navbar .dropdown-menu {
+  font-size: 14px;
+  padding: 10px;
+}
 </style>
 <body>
 <!-- Spinner Start -->
