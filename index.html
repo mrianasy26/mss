@@ -36,39 +36,7 @@
 <link href="css/style.css" rel="stylesheet">
 </head>
 <style>
-.navbar {
-  padding-left: 0 !important;
-}
 
-.navbar .container-fluid {
-  padding-left: 0 !important;
-  margin-left: 0 !important;
-}
-
-.navbar-brand { 
-  padding-left: 0 !important;
-  margin-left: 0 !important;
-}
-/* Navbar Responsive */
-.navbar-brand h1 {
-  font-size: 16px; /* Nama perusahaan mengecil di HP */
-  white-space: nowrap; /* Biar teks tidak pecah */
-}
-
-@media (max-width: 576px) {
-  .navbar-brand h1 {
-    font-size: 14px;
-  }
-  .navbar-brand img {
-    max-height: 35px; /* Logo lebih kecil */
-  }
-}
-
-/* Dropdown di HP lebih lebar */
-.navbar .dropdown-menu {
-  font-size: 14px;
-  padding: 10px;
-}
 </style>
 <body>
 <!-- Spinner Start -->
@@ -101,54 +69,60 @@
 
 <!-- Navbar Start -->
 <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-0 pe-3">
-  <div class="container-fluid">
-    <!-- Logo + Nama -->
-    <a href="index.html" class="navbar-brand d-flex align-items-center ps-3 me-0">
-      <img src="img/logo bg remove hitam.png" class="img-fluid" style="max-height:50px;" alt="Logo">
-      <h1 class="text-dark m-0 fs-5 ms-2">PT. Maju Seraya Sukses</h1>
-    </a>
+  <div class="container-fluid d-flex justify-content-between align-items-center">
 
-    <!-- Toggle Button (Mobile) -->
-    <button type="button" class="navbar-toggler me-3" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <!-- LEFT SIDE: Logo + Name -->
+    <div class="d-flex align-items-center">
+      <a href="index.html" class="navbar-brand d-flex align-items-center ps-3 me-0">
+        <img src="img/logo bg remove hitam.png" class="img-fluid" style="max-height:50px;" alt="Logo">
+        <h1 class="text-dark m-0 fs-5 ms-2">PT. Maju Seraya Sukses</h1>
+      </a>
+    </div>
 
-    <!-- Menu -->
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <div class="navbar-nav ms-auto p-3 p-lg-0">
+    <!-- RIGHT SIDE: Toggle Button + Menu -->
+    <div class="d-flex align-items-center">
 
-        <a href="index.html" class="nav-item nav-link active">Home</a>
+      <!-- Toggle Button -->
+      <button type="button" class="navbar-toggler me-2" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <!-- Tentang Kami Dropdown -->
-        <div class="nav-item dropdown">
-          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Tentang Kami</a>
-          <div class="dropdown-menu bg-light m-0" style="font-size: 15px;">
-            <a href="Sejarah Perusahaan.html" class="dropdown-item">Sejarah Perusahaan</a>
-            <a href="Struktur Organisasi.html" class="dropdown-item">Struktur Organisasi</a>
-            <a href="Legalitas.html" class="dropdown-item">Legalitas</a>
-            <a href="Penghargaan.html" class="dropdown-item">Penghargaan</a>
+      <!-- Menu -->
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-3 p-lg-0">
+
+          <a href="index.html" class="nav-item nav-link active">Home</a>
+
+          <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Tentang Kami</a>
+            <div class="dropdown-menu bg-light m-0" style="font-size: 15px;">
+              <a href="Sejarah Perusahaan.html" class="dropdown-item">Sejarah Perusahaan</a>
+              <a href="Struktur Organisasi.html" class="dropdown-item">Struktur Organisasi</a>
+              <a href="Legalitas.html" class="dropdown-item">Legalitas</a>
+              <a href="Penghargaan.html" class="dropdown-item">Penghargaan</a>
+            </div>
           </div>
-        </div>
 
-        <!-- Layanan Dropdown -->
-        <div class="nav-item dropdown">
-          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Layanan</a>
-          <div class="dropdown-menu bg-light m-0" style="font-size: 15px;">
-            <a href="Layanan.html" class="dropdown-item">Layanan Kami</a>
-            <a href="Values.html" class="dropdown-item">Values & Kekuatan</a>
-            <a href="Scope.html" class="dropdown-item">Scope Of Business</a>
-            <a href="Distribusi.html" class="dropdown-item">Proses Distribusi</a>
+          <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Layanan</a>
+            <div class="dropdown-menu bg-light m-0" style="font-size: 15px;">
+              <a href="Layanan.html" class="dropdown-item">Layanan Kami</a>
+              <a href="Values.html" class="dropdown-item">Values & Kekuatan</a>
+              <a href="Scope.html" class="dropdown-item">Scope Of Business</a>
+              <a href="Distribusi.html" class="dropdown-item">Proses Distribusi</a>
+            </div>
           </div>
+
+          <a href="Galeri.html" class="nav-item nav-link">Galeri</a>
+          <a href="Berita.html" class="nav-item nav-link">Berita</a>
+          <a href="karir.html" class="nav-item nav-link">karir</a>
+          <a href="Klien.html" class="nav-item nav-link">Klien</a>
+          <a href="Kontak.html" class="nav-item nav-link">Kontak</a>
+
         </div>
-
-        <!-- Menu Lain -->
-        <a href="Galeri.html" class="nav-item nav-link">Galeri</a>
-        <a href="Berita.html" class="nav-item nav-link">Berita</a>
-        <a href="Klien.html" class="nav-item nav-link">Klien</a>
-        <a href="Kontak.html" class="nav-item nav-link">Kontak</a>
-
       </div>
     </div>
+
   </div>
 </nav>
 <!-- Navbar End -->
