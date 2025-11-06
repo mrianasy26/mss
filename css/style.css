@@ -63,6 +63,36 @@ h5, h6, .h5, .h6, .fw-semi-bold { font-weight: 500 !important; }
     background-color: var(--primary);
 }
 
+@media (max-width: 991px) {
+  .navbar-brand h1 {
+    font-size: 16px;
+  }
+}
+
+.navbar {
+  padding-left: 0 !important;
+}
+
+.navbar .container-fluid {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+.navbar-brand { 
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+/* Navbar Responsive */
+.navbar-brand h1 {
+  font-size: 16px; /* Nama perusahaan mengecil di HP */
+  white-space: nowrap; /* Biar teks tidak pecah */
+}
+
+/* Dropdown di HP lebih lebar */
+.navbar .dropdown-menu {
+  font-size: 14px;
+  padding: 10px;
+}
 /*** Navbar ***/
 .navbar.sticky-top {
     top: -100px;
