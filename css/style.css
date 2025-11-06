@@ -68,7 +68,30 @@ h5, h6, .h5, .h6, .fw-semi-bold { font-weight: 500 !important; }
     font-size: 16px;
   }
 }
+/* Pastikan logo + teks + hamburger selalu sejajar */
+.navbar .container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+/* Perbaikan agar elemen brand & tombol tidak turun */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+/* Jika logo terlalu besar di beberapa HP, sesuaikan */
+.navbar-brand img {
+  max-height: 48px;
+}
+
+/* Pastikan toggle button tidak turun ke bawah */
+.navbar-toggler {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
 .navbar {
   padding-left: 0 !important;
 }
